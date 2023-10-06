@@ -58,7 +58,7 @@ io.on('connection', (socket) => {
 });
 
 app.get('/', (req, res) => {
-    res.send("Updated server")
+    res.send("Updated server 8th")
 })
 
 const PORT = process.env.PORT || 5000;
