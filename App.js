@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
     cors: {
-        origin: "*"
+        origin: "https://arafat-react.vercel.app"
     }
 });
 
@@ -55,7 +55,7 @@ io.on('connection', (socket) => {
 });
 
 app.get('/', (req, res) => {
-    res.send("Hello arafat rtc server")
+    res.send("Updated server")
 })
 
 const PORT = process.env.PORT || 5000;
