@@ -7,7 +7,10 @@ const server = http.createServer(app);
 const io = socketIo(server, {
     cors: {
         origin: "https://arafat-react.vercel.app"
-    }
+    },
+    path: '/socket.io',
+    transports: ['websocket'],
+    secure: true,
 });
 
 
